@@ -1,10 +1,15 @@
+import mealsImage from '../../assets/meals.jpg';
+import classes from 'Header.module.css'
+
 const Header = props => {
     return <>
-        <header>
+        <header className={classes.header}>
             <h1>Meals</h1>
             <button>Cart</button>
         </header>
-        <div></div>
+        <div className={classes['main-image']}>
+            <img src={mealsImage} alt="A fine dine with foods." />
+        </div>
     </>
 };
 
