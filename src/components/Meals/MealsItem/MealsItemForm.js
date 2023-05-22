@@ -5,7 +5,7 @@ const MealsItemForm = () => {
     return (
         <form className={classes.form}>
             <Input label="Amount" input={{
-                id: 'amount',
+                id: 'amount' + Math.random(), //bug fixed
                 type: 'number',
                 min: '1',
                 max: '5',
